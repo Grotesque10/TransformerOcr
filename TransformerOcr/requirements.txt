@@ -1,0 +1,15 @@
+# Requirements inferred from `transformerMainScript.ipynb` and `corpuscreator.ipynb`
+# Notes:
+# - Versions are conservative suggestions; adjust to the exact versions used in your environment if known.
+# - If you plan to use GPU acceleration, install the matching `tensorflow` GPU build or set up CUDA/cuDNN accordingly.
+
+tensorflow>=2.8,<3.0
+numpy>=1.19
+opencv-python>=4.5
+matplotlib>=3.3
+pyctcdecode>=0.9.0
+h5py>=3.1
+Pillow>=8.0
+
+# Optional / recommended for LM support (used by pyctcdecode when building decoders):
+# kenlm (install via conda or build from source; not available via simple pip on some platforms)
